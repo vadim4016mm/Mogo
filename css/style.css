@@ -1,14 +1,38 @@
+/* fonts */
+@font-face {
+    font-family: 'kaushan Script';
+    src: url(../fonts/KaushanScript-Regular.ttf);
+}
+
+/* Global styles */
 * {
     margin: 0;
     box-sizing: border-box;
 }
-
-/* header */
-header {
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+header,
+main,
+footer {
     width: 1200px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+p {
+    color: #b6b6b6;
+}
+
+/* header */
+header {
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -21,6 +45,8 @@ header {
     color: #95E1D3;
 }
 .menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     list-style: none;
     display: flex;
 }
@@ -35,5 +61,53 @@ header {
 }
 .menu a:hover {
     color: #F38181;
-    border-bottom: 3px solid #F38181;;
+    border-bottom: 3px solid #f38181;
+}
+
+/* section-title */
+.section-title {
+    text-align: center;
+}
+.subtitle {
+    font-family: 'kaushan Script';
+    font: 24px;
+    line-height: 35px;
+    color: #000000;
+}
+.section-title h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.section-title hr {
+    width: 60px;
+    height: 4px;
+    background: #F38181;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* services */
+.services {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services li {
+    width: 33.33%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    align-items: flex-start;
+}
+.services img {
+    margin-right: 20px;
+}
+.services h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
 }
