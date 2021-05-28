@@ -7,6 +7,7 @@
 /* Global styles */
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
@@ -110,4 +111,23 @@ header {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
+}
+
+/* team */
+.team hr {
+    margin-bottom: 45px;
+}
+.team-list {
+    list-style: none;
+    display: flex;
+}
+.team-item {
+    width: 33.33%;
+    margin-right: 30px;
+}
+.team-item:last-child{
+    margin-right: 0;
+}
+.team-item img {
+    width: 100%;
 }
