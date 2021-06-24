@@ -126,6 +126,8 @@ header {
     margin-bottom: 45px;
 }
 .team-list {
+    padding-top: 30px;
+    text-align: center;
     list-style: none;
     display: flex;
 }
@@ -165,6 +167,7 @@ header {
     top: calc(50% - 10px);
     left: calc(50% - 10px);
     transform: translate(-50%);
+    transition: .3s;
     opacity: 0;
 }
 .social li {
@@ -186,6 +189,22 @@ header {
 .social img {
     height: 26px;
     width: auto;
+}
+.team-item h3 {
+    margin-top: 30px;
+    margin-bottom: 11px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+.team-item p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #B6B6B6;
 }
 
 /* footer */
