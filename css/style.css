@@ -273,4 +273,18 @@ input[type=submit] {
     footer {
         flex-direction: column-reverse;
     }
+}@media (max-width: 425px) {
+    .service-list,
+    .team {
+        border-top: 30px;
+        padding-bottom: 30px;
+    }
+    .service li {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.team-item {
+    width: 100%;
 }
