@@ -15,6 +15,9 @@ body {
     font-weight: 400;
     font-size: 15px;
 }
+.wrapper {
+    overflow: hidden;
+}
 header,
 main,
 footer {
@@ -55,7 +58,7 @@ input[type="checkbox"] {
     display: none;
 }
 input[type="checkbox"]:checked ~ nav {
-    display: block;
+    width: 0;
 }
 
 label {
@@ -305,12 +308,12 @@ input[type=submit] {
         display: block;
     }
     nav {
-        display: none;
         position: absolute;
         top: 70px;
-        left: 0;
+        right: -100%;
         width: 100%;
         background-color: #fff;
+        transition: .3s;
     }
     .menu {
         flex-direction: column;
