@@ -49,6 +49,53 @@ header {
     line-height: 37px;
     color: #95E1D3;
 }
+
+/* mobile menu */
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked ~ nav {
+    display: block;
+}
+
+label {
+    height: 30px;
+    position: relative;
+    display: none;
+}
+.toggle-btn {
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background-color: #95E1D3;
+    border: none;
+}
+.toggle-btn::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    background-color: #95E1D3;
+    border: none;
+    position: relative;
+    top: -10px;
+}
+.toggle-btn::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    background-color: #95E1D3;
+    border: none;
+    position: relative;
+    top: 9px;
+}
+
 .menu {
     list-style: none;
     display: flex;
@@ -254,8 +301,24 @@ input[type=submit] {
     }
 }
 @media (max-width: 768px) {
+    label {
+        display: block;
+    }
     nav {
         display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li {
+        margin-left: 0;
+        margin-bottom: 30px;
     }
     .services li {
         width: 50%;
@@ -273,18 +336,19 @@ input[type=submit] {
     footer {
         flex-direction: column-reverse;
     }
-}@media (max-width: 425px) {
+}
+@media (max-width: 425px) {
     .service-list,
     .team {
-        border-top: 30px;
+        padding-top: 30px;
         padding-bottom: 30px;
     }
-    .service li {
+    .services li {
         width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-}
-.team-item {
-    width: 100%;
+    .team-item {
+        width: 100%;
+    }
 }
