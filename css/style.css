@@ -16,7 +16,10 @@ body {
     font-size: 15px;
 }
 .wrapper {
+    position: relative;
     overflow: hidden;
+    width: 100%;
+
 }
 header,
 main,
@@ -306,13 +309,15 @@ input[type=submit] {
 @media (max-width: 768px) {
     label {
         display: block;
+        z-index: 9;
     }
     nav {
         position: absolute;
-        top: 70px;
-        right: -100%;
+        top: -200px;
+        right: -75%;
         width: 100%;
-        background-color: #fff;
+        background-color: #F38181;
+        border-radius: 120px;
         transition: .3s;
     }
     .menu {
