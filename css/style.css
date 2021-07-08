@@ -61,7 +61,10 @@ input[type="checkbox"] {
     display: none;
 }
 input[type="checkbox"]:checked ~ nav {
-    width: 0;
+    right: 0;
+    top: 70px;
+    background-color: #fff;
+    border-radius: 0;
 }
 
 label {
@@ -313,11 +316,12 @@ input[type=submit] {
     }
     nav {
         position: absolute;
-        top: -200px;
-        right: -75%;
+        top: -150px;
+        right: -74%;
         width: 100%;
         background-color: #F38181;
         border-radius: 120px;
+        box-shadow: 0 8px 12px #ececec;
         transition: .3s;
     }
     .menu {
